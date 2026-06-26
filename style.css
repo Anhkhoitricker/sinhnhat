@@ -605,34 +605,3 @@ body {
 #mewmew.animationOp{
     animation: opacityHeart 1s 1s forwards;
 }
-/* Đoạn code tối ưu giao diện toàn diện cho điện thoại */
-@media screen and (max-width: 768px) {
-    /* Ép toàn bộ trang web và các khung chứa lớn phải thu nhỏ vừa khít màn hình */
-    html, body, #wrapper, .container, .content {
-        width: 100% !important;
-        max-width: 100% !important;
-        overflow-x: hidden !important; /* Chống tràn màn hình sang hai bên */
-        margin: 0 auto !important;
-        padding: 5px !important;
-        box-sizing: border-box !important;
-    }
-
-    /* Thu nhỏ chữ Happy Birthday cho vừa màn hình dọc */
-    h1, .happy, .birthday, h1 span {
-        font-size: 1.8rem !important; /* Giảm kích thước chữ */
-        line-height: 1.2 !important;
-        white-space: normal !important; /* Cho phép chữ tự xuống dòng nếu quá dài */
-    }
-
-    /* Thu nhỏ bức ảnh bạn nữ và các icon bong bóng, mặt cười */
-    .left, .right, .image, img, .love_img {
-        max-width: 100% !important;
-        height: auto !important;
-    }
-
-    /* Đưa ảnh bạn nữ nằm gọn gàng bên dưới chữ thay vì đè lên nhau */
-    .content {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-    }
